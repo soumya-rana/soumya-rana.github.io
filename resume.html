@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Resume - Your Name</title>
+  <title>Soumya's resume</title>
   <link rel="stylesheet" href="style.css">
   <style>
     .resume-section {
@@ -40,7 +40,9 @@
 
 <section class="section">
   <h2>📄 My Resume</h2>
-
+    <p>This is not a formal resume meant for a recruiter or a particular role. Its more of what all I have done so far; 
+        I may not be very well-versed some things that I have done in past, given that they are very different from what I do now.
+    </p>
   <div class="resume-section">
     <h3>About Me</h3>
     <p>I am a passionate software engineer with a strong focus on building scalable and user-friendly web applications. I love collaborating, learning new technologies, and solving complex problems!</p>
@@ -60,7 +62,7 @@
     <div class="resume-item">
       <h4>Engineer, Analog Design Engineering</h4>
       <h5>Analog Devices, Bangalore</h5>
-      <span>Jan 2022 – Present</span>
+      <span>Sep 2024 – Present</span>
       <p>
         <li> Designed and integrated a programmable clock divider (input frequency 2 - 16 GHz, division ratio 2 - 16) to reduce power consumption by 80\% and mitigate BTI aging in a $8\times33 $G DDR SerDes. Performed verification of full clock path (transmission lines, AC coupled clock buffers) duty cycle degradation and jitter from PLL output till Serialiser lanes. </li>
         <li>  Designed and verified the transmission line and clock buffers for the reference clock of the above PLL.</li>
@@ -69,7 +71,7 @@
     <div class="resume-item">
       <h4>Analog Design Engineer</h4>
       <h5>Texas Instruments, Bangalore</h5>
-      <span>May 2021 – Aug 2021</span>
+      <span>Jul 2023 – Aug 2024</span>
       <p>
         <li>Designed active snubber circuits to protect high side power FET in 12 V, 50 A buck converters during hard switching, with current
         switching rates above 20 A/ns. Performed post-layout design optimizations to ensure an optimal tradeoff between efficiency and
@@ -102,7 +104,33 @@
       <li>Google UX Design Certificate</li>
     </ul>
   </div> -->
-
+  <div class="resume-section">
+    <h3>Publications</h3>
+  
+    <div class="resume-item">
+      <h4>"EdgeP4: In-Network Edge Intelligence for a Tactile Cyber-Physical System Testbed Across Cities" (Nithish K. Gnani, Joydeep Pal, Deepak Choudhary, Himanshu Verma, Soumya Kanta Rana, Kaushal S Mhapsekar, T Venkata Prabhakar, Chandramani Singh )</h4>
+      <span>IEEE INFOCOMM CNERT, May 2024</span>
+      <p> The work involves design and implementations of two edge intelligence algorithms hosted at P4
+        programmable end switches placed 400 km apart. These algorithms locally compute and command corrective signals to serve
+        tactile internet applications such as remote surgery with ≤ 100µs RTT. Tremor suppression algorithm at the edge switch
+        placed near the operator reduces bandwidth utilization by 99.9% by dropping packets without useful information. Pose
+        correction algorithm at the other end corrects tool position of an Industrial Robot smartly without operator involvement.
+        <a href="https://ieeexplore.ieee.org/document/10620719" target="_blank">[Read More]</a></p>
+    </div>
+  
+    <div class="resume-item">
+      <h4>"Enhancing Reliability of Scheduled Traffic in Time-Sensitive Networks using Frame Replication and
+        Elimination" (Soumya K. Rana, Himanshu Verma, Joydeep Pal, Deepak Choudhary, Prabhakar T V,
+        Chandramani Singh) </h4>
+      <span>IEEE LANMAN, July 2023</span>
+      <p> The work involves implementation of IEEE 802.1CB standard (Frame Replication and Elimination for
+        reliability) on programmable switches using P4 and Micro-C. The algorithms are meant to perform de-duplication in pipelined
+        switches at 2.5 Gbits/s and achieved a worst-case processing time of 250 ns per packet. The paper lists the packet
+        de-duplication algorithms implemented and presents the corresponding test results on a 2 host - 2 switch testbed.<a href="https://ieeexplore.ieee.org/document/10189416" target="_blank">[Read More]</a></p>
+    </div>
+  
+  </div>
+  
 </section>
 
 </body>
