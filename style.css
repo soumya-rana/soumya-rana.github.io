@@ -182,14 +182,17 @@ footer {
 .instruction-box h3 {
   margin-top: 0;
   color: #0d47a1;
+  max-width: 700px; /* LIMIT width */
 }
 
 .instruction-box ul {
   margin: 0;
   padding-left: 1.2rem;
+  max-width: 700px; /* LIMIT width */
 }
 
 .instruction-box li {
   margin-bottom: 0.5rem;
+  max-width: 700px; /* LIMIT width */
   color: #333;
 }
