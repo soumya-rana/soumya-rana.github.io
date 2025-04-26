@@ -2,74 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name - Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem;
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       background-color: #f9f9f9;
-    }
-    h1, h2 {
       color: #333;
     }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    a {
-      color: #0066cc;
+    nav a {
+      margin-left: 1.5rem;
       text-decoration: none;
+      color: #0077cc;
+      font-weight: bold;
     }
-    a:hover {
+    nav a:hover {
       text-decoration: underline;
     }
-    iframe {
-      border: 1px solid #ccc;
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+    .socials a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #333;
+      font-size: 1.5rem;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    ul.projects {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    ul.projects li {
+      background: #fff;
+      padding: 1rem;
       border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .iframe-container {
       width: 100%;
       height: 600px;
-      margin-top: 1rem;
     }
-    .testimonial {
-      border-left: 4px solid #0066cc;
-      background-color: #fff;
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
       padding: 1rem;
-      margin: 1rem 0;
-    }
-    .testimonial-author {
-      font-weight: bold;
-      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 3rem;
     }
   </style>
 </head>
+
 <body>
 
-  <h1>Welcome to My Personal Site</h1>
+  <header>
+    <div class="logo"><strong>Your Name</strong></div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#booking">Book Appointment</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
 
-  <h2>🛠️ Projects</h2>
-  <ul>
-    <li><a href="https://github.com/your-username/project1">Project 1</a> – A short description.</li>
-    <li><a href="https://github.com/your-username/project2">Project 2</a> – Another cool thing I built.</li>
-  </ul>
+  <section class="hero">
+    <img src="your-photo.jpg" alt="Your Name Photo">
+    <h1>Hello, I'm Your Name</h1>
+    <p>I’m passionate about [your work area]. I love building impactful projects and helping people through meaningful conversations.</p>
+    <div class="socials">
+      <a href="https://github.com/your-username" target="_blank">GitHub</a> |
+      <a href="https://linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a> |
+      <a href="https://twitter.com/your-twitter" target="_blank">Twitter</a>
+    </div>
+  </section>
 
-  <h2>📅 Book an Appointment</h2>
-  <p><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/your-link" target="_blank">Click here to book time with me on Google Calendar</a></p>
+  <section id="projects" class="section">
+    <h2>🛠️ Personal Projects</h2>
+    <ul class="projects">
+      <li>
+        <strong><a href="https://github.com/your-username/project1" target="_blank">Project 1</a></strong>
+        <p>Short description about what this project does.</p>
+      </li>
+      <li>
+        <strong><a href="https://github.com/your-username/project2" target="_blank">Project 2</a></strong>
+        <p>Short description about what this project does.</p>
+      </li>
+      <!-- Add more projects as needed -->
+    </ul>
+  </section>
 
-  <h2>🌟 Testimonials</h2>
+  <section id="booking" class="section">
+    <h2>📅 Book an Appointment</h2>
+    <div class="iframe-container">
+      <iframe src="https://calendar.google.com/calendar/appointments/schedules/your-link" frameborder="0"></iframe>
+    </div>
+  </section>
 
-  <div class="testimonial">
-    “Had a great session with [Your Name]! Super insightful and practical advice.”
-    <div class="testimonial-author">– Alex R.</div>
-  </div>
+  <section id="feedback" class="section">
+    <h2>🌟 Leave Your Feedback</h2>
+    <div class="iframe-container">
+      <iframe src="https://docs.google.com/forms/d/e/your-google-form-id/viewform?embedded=true" frameborder="0">Loading…</iframe>
+    </div>
+  </section>
 
-  <div class="testimonial">
-    “Helped me debug a tricky issue. Would highly recommend chatting with them.”
-    <div class="testimonial-author">– Priya K.</div>
-  </div>
-
-  <!-- Add more testimonials manually here -->
+  <footer>
+    © 2025 Your Name — All rights reserved.
+  </footer>
 
 </body>
 </html>
